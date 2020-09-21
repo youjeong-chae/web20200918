@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <style>
+    </style>
+</head>
+<body>
+    <input id="input1" type="text"> <br>
+    <input id="input2" type=" text"> <br>
+    <button onclick="mutiply()"><i class="fas fa-times"></i></button>
+    <p id="result1"></p>
+
+    <input id="input3" type=" text"> <br>
+    <input id="input4" type=" text"> <br>
+    <button onclick="divide()"><i class="fas fa-divide"></i></button>
+    <p id="result2"></p>
+
+    <input id="input5" type=" text"> <br>
+    <input id="input6" type=" text"> <br>
+    <button onclick="subtract()"><i class="fas fa-minus"></i></button>
+    <p id="result3"></p>
+
+    <script>
+        function mutiply() {
+            var num1 = document.getElementById("input1").value;
+            var num2 = document.getElementById("input2").value
+
+            var result = num1 * num2;
+            document.getElementById("result1").innerHTML = result;
+        }
+        function divide() {
+            var num1 = document.getElementById("input3").value;
+            var num2 = document.getElementById("input4").value
+
+            var result = num1 / num2; 
+            document.getElementById("result2").innerHTML = result;
+        }
+        function subtract() {
+            var num1 = document.getElementById("input5").value;
+            var num2 = document.getElementById("input6").value
+
+            var result = num1 - num2;
+            document.getElementById("result3").innerHTML = result;
+        }
+    </script>
+</body>
+</html>
