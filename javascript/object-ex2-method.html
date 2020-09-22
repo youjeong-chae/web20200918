@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <style>
+    </style>
+</head>
+<body>
+    <script>
+        function show() {
+            console.log("인풋요소의 값을 p요소에 출력");
+            var txt = document.getElementById("input1").value;
+            document.getElementById("para1").innerHTML = txt;
+        }
+
+        var car = {
+            name: "kia",
+            color: "white",
+            start: function() {
+                console.log("출발하는 기능");
+            }
+        };
+
+        console.log(car.name);
+        show();
+        car.start();
+    </script>
+</body>
+</html>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <style>
+    </style>
+</head>
+<body>
+    <button onclick="rpsGame()"><i class="fas fa-hand-rock"></i></button>
+    <button onclick="rpsGame()"><i class="fas fa-hand-paper"></i></button>
+    <button onclick="rpsGame()"><i class="fas fa-hand-scissors"></i></button>
+   
+   <br>
+
+   <img src="" alt="" id="computer">
+   <p id="result"></p>
+
+   <script>
+       function rpsGame() {
+           var r = Math.floor(Math.random()*3) + 1;
+           var fileName = "rps" + r + ".png";
+            document.getElementById("computer").src = fileName;
+
+            document.getElementById("result").innerHTML = "이겼습니다";
+            document.getElementById("result").innerHTML = "비겼습니다";
+            document.getElementById("result").innerHTML = "졌습니다";
+       }
+   </script>
+</body>
+</html>

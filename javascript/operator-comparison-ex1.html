@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <style>
+    </style>
+</head>
+<body>
+    <input type="text" id="input1">
+    <input type="text" id="input2">
+    <br>
+
+    <button onclick="equals()"><i class="fas fa-equals"></i> </button>
+    <button onclick="notEqual()"><i class="fas fa-not-equal"></i> </button>
+    <button onclick="gt()"><i class="fas fa-greater-than"></i> </button>
+    <button onclick="gte()"><i class="fas fa-greater-than-equal"></i> </button>
+    <button onclick="lt()"><i class="fas fa-less-than"></i> </button>
+    <button onclick="lte()"><i class="fas fa-less-than-equal"></i> </button>
+
+    <p id="result"></p>
+
+    <script>
+         function equals() {
+            var num1 = document.getElementById("input1").value;
+            var num2 = document.getElementById("input2").value;
+            num1 = Number(num1);
+            num2 = Number(num2);
+
+            var res = num1 == num2;
+            document.getElementById("result").innerHTML = res;
+         }
+
+         function notEqual() {
+            var num1 = document.getElementById("input1").value;
+            var num2 = document.getElementById("input2").value;
+            num1 = Number(num1);
+            num2 = Number(num2);
+
+            var res = num1 != num2;
+            document.getElementById("result").innerHTML = res;
+         }
+
+         function gt() {
+            var num1 = document.getElementById("input1").value;
+            var num2 = document.getElementById("input2").value;
+            num1 = Number(num1);
+            num2 = Number(num2);
+
+            var res = num1 > num2;
+            document.getElementById("result").innerHTML = res;
+         }
+
+         function gte() {
+            var num1 = document.getElementById("input1").value;
+            var num2 = document.getElementById("input2").value;
+            num1 = Number(num1);
+            num2 = Number(num2);
+
+            var res = num1 >= num2;
+            document.getElementById("result").innerHTML = res;
+         }
+         function lt() {
+            var num1 = document.getElementById("input1").value;
+            var num2 = document.getElementById("input2").value;
+            num1 = Number(num1);
+            num2 = Number(num2);
+
+            var res = num1 < num2;
+            document.getElementById("result").innerHTML = res;
+         }
+         function lte() {
+            var num1 = document.getElementById("input1").value;
+            var num2 = document.getElementById("input2").value;
+            num1 = Number(num1);
+            num2 = Number(num2);
+
+            var res = num1 <= num2;
+            document.getElementById("result").innerHTML = res;
+         }
+    </script>
+       
+</body>
+</html>
