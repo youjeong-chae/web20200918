@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <style>
+    </style>
+</head>
+<body>
+    <h1 onclick="console.log('hello');" id="head1">Lorem.</h1>
+    <h1 onclick="show();" id="head2">Lorem, ipsum.</h1>
+    <h1 id="head3">lorem, ipsum dolor.</h1>
+    <h1 id="head4">Lorem, ipsum.</h1>
+
+    <script>
+        var h4 = document.getElementById("head");
+        h4.addEventListener("click", show);
+
+         function show() {
+            for (var i = 0; i < 3; i++) {
+                console.log(i);
+            }
+        }
+
+
+        var h3 = document.getElementById("head3");
+
+        h3.onclick = show;
+
+        var i = 3;
+        var j = i;
+
+        console.log(show);
+
+
+    </script>
+</body>
+</html>
