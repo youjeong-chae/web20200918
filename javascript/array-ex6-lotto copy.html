@@ -10,18 +10,18 @@
     <div id="result"></div>
     <script>
         function lotto() {
-            var numbers = [];
+            var 바구니 = [];
 
-            while (numbers.length < 6) {
-                var newNumber = Math.floor(Math.random()*45)+1;
-                if (!numbers.includes(newNumber)) {
-                    numbers.push(newNumber);
+            while (바구니.length < 6) {
+                var 랜덤숫자 = Math.floor(Math.random()*45)+1;
+                if (!바구니.includes(랜덤숫자)) {
+                    바구니.push(랜덤숫자);
                 }
             }
 // <div>1</div><div>2</div><div>3</div><div>4</div><div>5</div><div>6</div>
             var txt = "";
-            for (var i = 0; i < numbers.length; i++) {
-                txt += "<div>" + numbers[i] + "</div>";
+            for (var i = 0; i < 바구니.length; i++) {
+                txt += "<div>" + 바구니[i] + "</div>";
             }
             document.getElementById("result").innerHTML = txt;
         }

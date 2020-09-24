@@ -5,24 +5,20 @@
     <style>
     </style>
 </head>
-<!-- h1*5#head$>lorem5 -->
-
-<h1 id="head1">Lorem ipsum dolor sit amet.</h1>
-<h1 id="head2">Porro, facilis ipsam! Excepturi, exercitationem?</h1>
-<h1 id="head3">Omnis hic veniam quae corporis.</h1>
-<h1 id="head4">Eveniet tempore cupiditate iure quia?</h1>
-<h1 id="head5">Repellat illo corporis sapiente error.</h1>
-
 <body>
+    <h1 id="head1">Lorem ipsum dolor sit amet.</h1>
+    <h1 id="head2">Sed at voluptate sequi blanditiis.</h1>
+    <h1 id="head3">Suscipit accusamus tempora est illum.</h1>
+    <h1 id="head4">Corporis, corrupti reiciendis. Exercitationem, ratione?</h1>
+    <h1 id="head5">Fugiat debitis atque deserunt maxime.</h1>
     <script>
-
-        var head1 =document.getElementById("head1");
-
-        var heads = document.getElementsByClassName("h1");
+        var head1 = document.getElementById("head1");
+        var heads = document.getElementsByTagName("h1");
         console.log(heads.length);
 
-        for (var i = 0; i < heads[i].innerHTML);
+        for (var i = 0; i < heads.length; i++) {
             console.log(heads[i].innerHTML);
+        }
 
     </script>
 </body>

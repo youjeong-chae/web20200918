@@ -7,6 +7,24 @@
 </head>
 <body>
     <script>
+        var heros = ["thor", "hulk", "cap", "doctor"];
+
+        for (var i = 0; i < heros.length; i++) {
+            console.log(heros[i]);
+        }
+
+        // push() 배열의 끝에 아이템을 추가한다
+        heros.push("marvel");
+        console.log(heros.length);
+
+        // pop() 배열의 마지막 아이템을 제거한다
+        heros.pop();
+        heros.pop();
+        console.log(heros.length);
+        for (var i = 0; i < heros.length; i++) {
+            console.log(heros[i]);
+        }
+
     </script>
 </body>
 </html>
