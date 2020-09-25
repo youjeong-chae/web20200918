@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <style>
+    </style>
+    <script>
+        $(document).ready(function() {
+            $("#btn1").click(function() {
+                $("h1").toggle(3000, function() {
+                    console.log("효과가 끝난 후 실행");
+                });  
+            });
+        });
+
+        // 인자로 들어간 함수를 콜백이라고 한다
+        //(3000, function() {console.log("효과가 끝난 후 실행"); }) 
+        // 두개의 인자중에 function이 함수니까 콜백
+        function a(p) {
+            console.log(p);
+        }
+        // 함수 안에 명시되는게 파라미터 (매개변수)
+        // 호출할 때 값을 넣어주는게 아규먼트 (인자, 인수)
+
+        a(3);
+        a(4);
+        a("hello");
+
+    </script>
+</head>
+<body>
+    <button id="btn1">toggle</button>
+    <h1>Lorem, ipsum dolor.</h1>
+</body>
+</html>

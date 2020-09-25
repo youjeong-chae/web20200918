@@ -7,23 +7,56 @@
 </head>
 <body>
     <button onclick="lotto()">로또 번호</button>
+    <!-- button를 onclick하면 lotto라는 함수 실행 
+        button의 이름은 로또 번호 -->
     <div id="result"></div>
+    <!-- id이름은 result -->
     <script>
         function lotto() {
+            // lotto함수 선언
             var numbers = [];
+            // 변수선언 numbers라는 변수를 [] 배열하겠다
+            // 변수는 초기화를 시켜줘야 한다.
+            // 이름을 지정(선언) 그리고 초기화
 
             while (numbers.length < 6) {
+                // while 반복문 numbers의 길이가 6보다 작으니까 
+                // 0, 1, 2, 3, 4, 5
                 var newNumber = Math.floor(Math.random()*45)+1;
+                // Math 라는 객체는 floor, random 등의 프로퍼티를 가짐
+                // (사전보면 엄청나게 많은 프로퍼티가 있음)
+                // random 이라는 매소드는 0~1(1은 포함하지 않아)
+                // 그러니까 0~0.99999(무한) 
+                // * 45를 하게되면 0~44.9999(무한)
+                // 필요한건 1~45니까 floor이 소숫점 뒤 없애주고
+                // 0~44가 나오니까 +1해서 1~45를 만듬
                 if (!numbers.includes(newNumber)) {
+                    // if 조건문
+                    // !는 not 따라서 true면 false를 내놓고
+                    // false면 true를 내놓아
+                    // includes(newNumber) !numbers안에 newNumber이 있는지 확인
+                    // 포함하다
+                    // numbers안에 넣은 newNumber가 중복되지 않도록
+                    // true여야 if가 실행돼
                     numbers.push(newNumber);
+                    // numbers안에 newNumber를 push해라(넣어라)
                 }
             }
-// <div>1</div><div>2</div><div>3</div><div>4</div><div>5</div><div>6</div>
+            // <div>1</div><div>2</div><div>3</div><div>4</div><div>5</div><div>6</div>
             var txt = "";
+            // 변수 txt 선언 "" 초기화
+
             for (var i = 0; i < numbers.length; i++) {
                 txt += "<div>" + numbers[i] + "</div>";
             }
             document.getElementById("result").innerHTML = txt;
+            // = 기호는 오른쪽껄 왼쪽에 대입시켜라
+            // txt를 innerHMTL에 대입시켜라
+            // innerHTML은 body에서 <div id="result"></div> 사이
+            // 왜냐면 앞에서 먼저 선택을 해줬으니까!
+            // document는 html을 포함하고 있는 문서
+            // id가 ()인 엘리멘트를 선택(얻어)
+            // .innerHTML 에서 .을 붙이는 거는 메소드라서
         }
     </script>
 </body>

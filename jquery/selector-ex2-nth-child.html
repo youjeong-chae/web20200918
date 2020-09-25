@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <style>
+        table {
+            border: 1px solid black;
+            width: 100%;
+            border-collapse: collapse;
+
+        }
+        td {
+            border: 1px solid black
+        }
+    </style>
+</head>
+<body>
+    <table>
+        <tr>
+            <td>Lorem ipsum dolor sit.</td>
+            <td>Dicta quidem atque explicabo?</td>
+            <td>Ut porro accusantium rem.</td>
+            <td>Pariatur eum harum eius.</td>
+            <td>Suscipit beatae ipsum ratione!</td>
+            <td>Doloremque dignissimos alias eos.</td>
+        </tr>
+        <tr>
+            <td>Dignissimos expedita tempora neque?</td>
+            <td>Nostrum dolorum blanditiis nobis.</td>
+            <td>Cumque blanditiis molestiae dolores.</td>
+            <td>In consequuntur eveniet odio.</td>
+            <td>Laboriosam, corrupti. Maxime, sit.</td>
+            <td>Nulla blanditiis temporibus pariatur.</td>
+        </tr>
+        <tr>
+            <td>Voluptatibus ex consequatur ipsum?</td>
+            <td>Id, numquam error? Cupiditate.</td>
+            <td>Voluptas eligendi officiis tenetur.</td>
+            <td>Fuga, ex quas! Similique.</td>
+            <td>Quo voluptas quasi perferendis?</td>
+            <td>Provident veritatis itaque tempora.</td>
+        </tr>
+        <tr>
+            <td>Illo eligendi obcaecati modi.</td>
+            <td>Laborum natus ipsam ad.</td>
+            <td>Illum obcaecati at commodi!</td>
+            <td>Dolore debitis vitae provident?</td>
+            <td>Corrupti laborum incidunt doloremque?</td>
+            <td>Quod culpa pariatur nesciunt.</td>
+        </tr>
+        <tr>
+            <td>Delectus doloremque in necessitatibus!</td>
+            <td>Optio cumque fugiat facilis?</td>
+            <td>Ab illo est blanditiis.</td>
+            <td>Impedit velit odio quos.</td>
+            <td>Ratione deleniti ipsam beatae.</td>
+            <td>Officiis impedit earum voluptas.</td>
+        </tr>
+    </table>
+    <script>
+        // $("tr:odd").hide();  
+        // 불러오는게 버전이 달라지면 얘가 실행이 안될수도 있어 아래꺼 알아둬
+        $("tr:nth-child(2n)").hide();
+        // n = 1 이면 2, n = 2 이면 4
+        // 홀수번째 하고 싶으면 2n+1
+    </script>
+</body>
+</html>
