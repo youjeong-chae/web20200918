@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <style>
+        .안녕 {
+            width: 500px;
+            height: 500px;
+            font-size: larger;
+            border: 10px solid indianred;
+            text-align: center;
+        }
+
+    </style>
+    <script>
+        $(document).ready(function() {
+            $(".안녕").click(function() {
+                $(this).animate({
+                    width: "1000px",
+                    height: "1000px",
+                    fontSize: "50px",
+                    left: "1000px"
+               }, 3000);
+            });
+        });
+    </script>
+</head>
+
+<body>
+    <div class="안녕">안녕하세요 <br> 열공하세요</div>
+</body>
+</html>
