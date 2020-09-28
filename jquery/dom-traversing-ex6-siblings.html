@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <style>
+    </style>
+    <script>
+        $(document).ready(function() {
+            $("h3").siblings().css("font-size", "50px");
+            // h3의 형제니까 h3은 빼고 바뀜
+            $("h3").next().css("color", "blue");
+            // h3의 다음꺼 h4
+            $("h3").nextAll().css("border", "5px solid green")
+            // h3의 다음꺼 전부
+        });
+    </script>
+</head>
+<body>
+    <h1>Lorem.</h1>
+    <h2>Debitis?</h2>
+    <h3>Quasi!</h3>
+    <h4>Accusamus?</h4>
+    <h5>Sint.</h5>
+    <h6>Voluptas?</h6>
+
+</body>
+</html>
