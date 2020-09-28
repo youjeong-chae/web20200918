@@ -8,16 +8,17 @@
     <script>
         $(document).ready(function() {
             $("#btn1").click(function() {
-                var txt = $("input1").val();
                 var li = $("<li />");
-                li.text(txt);
-                li.click(function() {
-                    $(this).remove();
-                });
+                var btn = $("<button />")
+                btn.append($("<i>").addClass("fas fa-minus"));
+                btn.click(function() {
+                    $(this).parent().remove();
+                 });
+
+                li.text($("#input1").val());
+                li.append(btn);
+    
                 $("#result").append(li);
-            });
-            $("#btn2").click(function() {
-                $("#result").empty();
             });
         });
     </script>
@@ -25,7 +26,6 @@
 <body>
     <input type="text" id="input1">
     <button id="btn1"><i class="fas fa-plus"></i></button>
-    <button id="btn2"><i class="fas fa-trash"></i></button>
     <ul id="result"></ul>
 </body>
 </html>
