@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <style>
+  </style>
+  <script>
+    $(document).ready(function() {
+      $("#div1").append("<p>hello</p>");
+      $("#div2").append("<p></p>");
+      $("#div3").append("<p />");
+
+      var newPara = $("<p />");
+      $("#div4").append(newPara);
+      newPara.text("hello");
+    });
+  </script>
+</head>
+<body>
+  <div id="div1">Lorem, ipsum dolor.</div>
+  <div id="div2">Lorem, ipsum dolor.</div>
+  <div id="div3">Lorem, ipsum dolor.</div>
+  <div id="div4">Lorem, ipsum dolor.</div>
+</body>
+</html>
